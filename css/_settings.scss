@@ -10,6 +10,7 @@ $grayLight: #7d7d7d;
 
 $md: 768px;
 $xs: 520px;
+$lg: 1200px;
 
 %ul{
   list-style: none;
@@ -35,7 +36,7 @@ body{
 }
 
 .wr{
-  max-width: 1200px;
+  max-width: $lg;
   padding: 0 15px;
   margin: 0 auto;
   box-sizing: border-box;

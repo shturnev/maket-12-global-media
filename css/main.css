@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,400,500,700,900&subset=cyrillic");
-#line-3 ul, #line-4 ul {
+#line-3 ul, #line-4 ul, #line-5 > .col-1 ul {
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -347,5 +347,57 @@ body {
       #line-4 ul li a:hover, #line-4 ul li a.active {
         background-color: #f39e31;
         color: white; }
+
+#line-5 {
+  display: grid;
+  grid-template-columns: 10% minmax(320px, 1200px) 10%;
+  grid-template-rows: minmax(100vh, auto);
+  justify-content: center;
+  align-items: center; }
+  #line-5 > .col-1 {
+    grid-column: 2 / span 1;
+    padding: 118px 15px 72px;
+    box-sizing: border-box; }
+    #line-5 > .col-1 ul > div {
+      display: flex !important;
+      align-items: center; }
+    #line-5 > .col-1 ul li {
+      display: grid;
+      grid-template-columns: minmax(320px, 529px) minmax(320px, 486px);
+      align-items: center;
+      justify-content: space-between; }
+      #line-5 > .col-1 ul li h3 {
+        color: #282828;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        margin: 0 0 25px 0; }
+      #line-5 > .col-1 ul li .text {
+        color: #7d7d7d;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+        margin-bottom: 15px; }
+      #line-5 > .col-1 ul li .more a {
+        color: #f39e31;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 36px;
+        text-transform: uppercase; }
+        #line-5 > .col-1 ul li .more a:hover {
+          color: #f29319; }
+      #line-5 > .col-1 ul li .forImg {
+        max-width: 100%; }
+  #line-5 > .col-2 {
+    padding-left: 109px; }
+    #line-5 > .col-2 button {
+      background: none;
+      border: 0;
+      outline: none;
+      cursor: pointer; }
+      #line-5 > .col-2 button svg {
+        width: 24px;
+        height: 41px;
+        fill: #d3d3d3; }
 
 /*# sourceMappingURL=main.css.map */
