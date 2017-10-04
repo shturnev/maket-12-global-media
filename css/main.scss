@@ -272,15 +272,12 @@
 #line-2{
   margin-top: -155px;
 
+
   &>ul{
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 29px;
-
-    @include media($xs){
-      grid-template-columns: 1fr;
-    }
 
     li{
       background:white;
@@ -347,6 +344,109 @@
         }
       }
 
+    }
+  }
+}
+#line-3{
+  padding: 100px 0 118px 0;
+
+  h2{
+    color: $grayDark;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    text-align: center;
+  }
+  .text-1{
+    color: $grayLight;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+  ul{
+    @extend %ul;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 35px;
+    margin-top: 65px;
+
+    @include media($md){
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include media($xs){
+      grid-template-columns: 1fr;
+    }
+    li{
+      &:before{
+        content: '';
+        display:block;
+        width: 34px;
+        height: 34px;
+        border: 8px solid #f3a032;
+        border-radius: 50%;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+
+        @include media($xs){
+          margin: 0 auto 30px auto;
+        }
+
+      }
+      .text{
+        color: $grayLight;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+      }
+    }
+  }
+
+}
+#line-4{
+  background-color: #f6f6f6;
+  padding: 100px 0 118px 0;
+
+  h2{
+    margin-bottom: 10px;
+  }
+
+  .text-1{
+    color: $grayLight;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+
+  }
+  ul{
+    @extend %ul;
+    margin-top: 114px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(173px, 1fr));
+    //justify-content: space-between;
+    grid-gap: 25px;
+
+
+
+    li{
+      a{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 173px;
+        box-shadow: 0 10px 45px rgba(40, 34, 26, 0.15);
+        text-decoration: none;
+        color: $grayDark;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &:hover, &.active{
+          background-color: $orange;
+          color: white;
+        }
+      }
     }
   }
 }

@@ -11,11 +11,20 @@ $grayLight: #7d7d7d;
 $md: 768px;
 $xs: 520px;
 
+%ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
 @mixin media($size){
   @media (max-width: $size) {
     @content;
   }
 }
+
+
 
 body{
   margin: 0;
@@ -32,3 +41,11 @@ body{
   box-sizing: border-box;
 }
 
+.h2{
+  color: $grayDark;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0;
+  text-align: center;
+}
