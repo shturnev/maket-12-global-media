@@ -457,11 +457,20 @@
   justify-content: center;
   align-items: center;
 
+  @include media($xs){
+    grid-template-columns: minmax(320px, $lg);
+  }
+
 
   &>.col-1{
     grid-column: 2 / span 1;
     padding: 118px 15px 72px;
     box-sizing: border-box;
+
+    @include media($xs){
+      grid-column: 1;
+      padding: 60px 15px 35px;
+    }
 
     ul{
       @extend %ul;
@@ -473,9 +482,15 @@
 
       li{
         display: grid;
-        grid-template-columns: minmax(320px, 529px) minmax(320px, 486px);
+        grid-template-columns: minmax(100px, 529px) minmax(100px, 486px);
+        grid-gap: 20px;
         align-items: center;
         justify-content: space-between;
+        justify-items: end;
+
+        @include media($xs){
+          grid-template-columns: minmax(320px, 529px);
+        }
 
         h3{
           color: $grayDark;
@@ -512,7 +527,12 @@
     }
   }
   &>.col-2{
-    padding-left: 109px;
+    text-align: right;
+    //padding-left: 109px;
+
+    @include media($xs){
+      display: none;
+    }
 
     button{
       background: none;
