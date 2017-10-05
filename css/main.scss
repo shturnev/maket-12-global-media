@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import "settings";
+@import url("https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8");
 
 
 #welcome{
@@ -507,6 +508,7 @@
           margin-bottom: 15px;
         }
         .more{
+          margin-bottom: 40px;
 
           a{
             color: $orange;
@@ -522,6 +524,30 @@
         }
         .forImg{
           max-width: 100%;
+        }
+        .btns{
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(198px, auto));
+          grid-gap: 20px;
+          justify-content: flex-start;
+
+          @include media($xs){
+            justify-content: center;
+
+          }
+
+          a{
+            opacity: 0.5;
+            transition: all 0.3s ease;
+
+            img{
+              max-width: 100%;
+            }
+            
+            &:hover{
+              opacity: 1;
+            }
+          }
         }
       }
     }
@@ -545,6 +571,238 @@
         height: 41px;
         fill: #d3d3d3;
       }
+    }
+  }
+}
+#line-6{
+  padding: 150px 0;
+  background: #f6f6f6;
+
+  h2{
+    color: $grayDark;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 0 0 15px;
+  }
+  .text-1{
+    max-width: 620px;
+    color: $grayLight;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+  ul{
+    @extend %ul;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 54px 35px;
+    margin-top: 85px;
+
+    @include media($xs){
+      grid-template-columns: 100%;
+
+    }
+
+    li{
+      display: flex;
+      align-items: flex-start;
+
+      svg{
+        width: 31px;
+        height: 32px;
+        fill: $orange;
+        margin-right: 25px;
+      }
+      .text{
+        flex: 1;
+        color: $grayLight;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+      }
+    }
+  }
+}
+#line-7{
+  position: relative;
+  padding: 100px 0 150px 0;
+  background: url("../img/publishers.jpg") no-repeat center / cover;
+
+  &:before{
+    content: '';
+    display:block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba($grayDark, 0.9);
+  }
+  &>.wr{
+    position: relative;
+    text-align: center;
+
+    h2{
+      color: #fff;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 48px;
+      margin: 0 0 25px 0;
+    }
+    .text-1{
+      margin: 0 auto 126px auto;
+      max-width: 745px;
+      color: $grayLight;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 36px;
+    }
+    svg{
+      width: 64px;
+      height: 64px;
+      fill: #fff;
+      cursor: pointer;
+      opacity: 0.7;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+
+}
+#line-8{
+  padding: 125px 0;
+  text-align: center;
+
+  h2{
+    color: $grayDark;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 0 0 35px 0;
+  }
+  .text-1{
+    max-width: 766px;
+    color: $grayLight;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-bottom: 121px;
+  }
+  ul{
+    @extend %ul;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+    //justify-items: center;
+    grid-gap: 50px 27px;
+
+    @include media($xs){
+      grid-template-columns: 100%;
+      justify-items: center;
+    }
+
+    li{
+      display: flex;
+      a{
+        display: block;
+        padding-bottom: 25px;
+        border-bottom: 4px solid transparent;
+        text-decoration: none;
+        color: $grayDark;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        
+        &:hover, &.active{
+          border-color: $orange;
+        }
+        img{
+          width: 120px;
+          height: 120px;
+          object-fit: contain;
+          text-align: center;
+        }
+      }
+    }
+
+  }
+}
+#line-9{
+  padding: 100px 0;
+  background: url("../img/map.png") no-repeat center / cover;
+
+  ul{
+    list-style: none;
+    max-width: 945px;
+    margin: 0 auto;
+    background: white;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    li{
+      margin-bottom: 30px;
+
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+      .text{
+        font-weight: 700;
+        line-height: 48px;
+        color: #b0b0b0;
+        font-size: 18px;
+      }
+      a{
+        display:block;
+        text-decoration: none;
+        color: $grayDark;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 48px;
+      }
+    }
+
+  }
+}
+footer{
+  padding: 84px 0 57px;
+  text-align: center;
+
+  .copy{
+    margin: 0 auto;
+    max-width: 655px;
+    color: $grayLight;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 40px;
+
+    a{
+      text-decoration: none;
+      color: $grayDark;
+    }
+  }
+  .soc{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+      display: block;
+      text-decoration: none;
+      color: $grayLight;
+      font-size: 20px;
+      margin-right: 30px;
+
+      &:last-of-type{
+        margin-right: 0;}
+
     }
   }
 }

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,400,500,700,900&subset=cyrillic");
-#line-3 ul, #line-4 ul, #line-5 > .col-1 ul {
+@import url("https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8");
+#line-3 ul, #line-4 ul, #line-5 > .col-1 ul, #line-6 ul, #line-8 ul {
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -390,16 +391,33 @@ body {
         font-weight: 400;
         line-height: 36px;
         margin-bottom: 15px; }
-      #line-5 > .col-1 ul li .more a {
-        color: #f39e31;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 36px;
-        text-transform: uppercase; }
-        #line-5 > .col-1 ul li .more a:hover {
-          color: #f29319; }
+      #line-5 > .col-1 ul li .more {
+        margin-bottom: 40px; }
+        #line-5 > .col-1 ul li .more a {
+          color: #f39e31;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 36px;
+          text-transform: uppercase; }
+          #line-5 > .col-1 ul li .more a:hover {
+            color: #f29319; }
       #line-5 > .col-1 ul li .forImg {
         max-width: 100%; }
+      #line-5 > .col-1 ul li .btns {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(198px, auto));
+        grid-gap: 20px;
+        justify-content: flex-start; }
+        @media (max-width: 520px) {
+          #line-5 > .col-1 ul li .btns {
+            justify-content: center; } }
+        #line-5 > .col-1 ul li .btns a {
+          opacity: 0.5;
+          transition: all 0.3s ease; }
+          #line-5 > .col-1 ul li .btns a img {
+            max-width: 100%; }
+          #line-5 > .col-1 ul li .btns a:hover {
+            opacity: 1; }
   #line-5 > .col-2 {
     text-align: right; }
     @media (max-width: 520px) {
@@ -414,5 +432,183 @@ body {
         width: 24px;
         height: 41px;
         fill: #d3d3d3; }
+
+#line-6 {
+  padding: 150px 0;
+  background: #f6f6f6; }
+  #line-6 h2 {
+    color: #282828;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 0 0 15px; }
+  #line-6 .text-1 {
+    max-width: 620px;
+    color: #7d7d7d;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px; }
+  #line-6 ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 54px 35px;
+    margin-top: 85px; }
+    @media (max-width: 520px) {
+      #line-6 ul {
+        grid-template-columns: 100%; } }
+    #line-6 ul li {
+      display: flex;
+      align-items: flex-start; }
+      #line-6 ul li svg {
+        width: 31px;
+        height: 32px;
+        fill: #f39e31;
+        margin-right: 25px; }
+      #line-6 ul li .text {
+        flex: 1;
+        color: #7d7d7d;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px; }
+
+#line-7 {
+  position: relative;
+  padding: 100px 0 150px 0;
+  background: url("../img/publishers.jpg") no-repeat center/cover; }
+  #line-7:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(40, 40, 40, 0.9); }
+  #line-7 > .wr {
+    position: relative;
+    text-align: center; }
+    #line-7 > .wr h2 {
+      color: #fff;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 48px;
+      margin: 0 0 25px 0; }
+    #line-7 > .wr .text-1 {
+      margin: 0 auto 126px auto;
+      max-width: 745px;
+      color: #7d7d7d;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 36px; }
+    #line-7 > .wr svg {
+      width: 64px;
+      height: 64px;
+      fill: #fff;
+      cursor: pointer;
+      opacity: 0.7; }
+      #line-7 > .wr svg:hover {
+        opacity: 1; }
+
+#line-8 {
+  padding: 125px 0;
+  text-align: center; }
+  #line-8 h2 {
+    color: #282828;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 0 0 35px 0; }
+  #line-8 .text-1 {
+    max-width: 766px;
+    color: #7d7d7d;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-bottom: 121px; }
+  #line-8 ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+    grid-gap: 50px 27px; }
+    @media (max-width: 520px) {
+      #line-8 ul {
+        grid-template-columns: 100%;
+        justify-items: center; } }
+    #line-8 ul li {
+      display: flex; }
+      #line-8 ul li a {
+        display: block;
+        padding-bottom: 25px;
+        border-bottom: 4px solid transparent;
+        text-decoration: none;
+        color: #282828;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px; }
+        #line-8 ul li a:hover, #line-8 ul li a.active {
+          border-color: #f39e31; }
+        #line-8 ul li a img {
+          width: 120px;
+          height: 120px;
+          object-fit: contain;
+          text-align: center; }
+
+#line-9 {
+  padding: 100px 0;
+  background: url("../img/map.png") no-repeat center/cover; }
+  #line-9 ul {
+    list-style: none;
+    max-width: 945px;
+    margin: 0 auto;
+    background: white;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    #line-9 ul li {
+      margin-bottom: 30px; }
+      #line-9 ul li:last-of-type {
+        margin-bottom: 0; }
+      #line-9 ul li .text {
+        font-weight: 700;
+        line-height: 48px;
+        color: #b0b0b0;
+        font-size: 18px; }
+      #line-9 ul li a {
+        display: block;
+        text-decoration: none;
+        color: #282828;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 48px; }
+
+footer {
+  padding: 84px 0 57px;
+  text-align: center; }
+  footer .copy {
+    margin: 0 auto;
+    max-width: 655px;
+    color: #7d7d7d;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 40px; }
+    footer .copy a {
+      text-decoration: none;
+      color: #282828; }
+  footer .soc {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .soc a {
+      display: block;
+      text-decoration: none;
+      color: #7d7d7d;
+      font-size: 20px;
+      margin-right: 30px; }
+      footer .soc a:last-of-type {
+        margin-right: 0; }
 
 /*# sourceMappingURL=main.css.map */
