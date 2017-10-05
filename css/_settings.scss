@@ -34,14 +34,12 @@ body{
   min-height: 100%;
   font-family: $roboto;
 }
-
 .wr{
   max-width: $lg;
   padding: 0 15px;
   margin: 0 auto;
   box-sizing: border-box;
 }
-
 .h2{
   color: $grayDark;
   font-size: 48px;
@@ -49,4 +47,7 @@ body{
   line-height: 48px;
   margin: 0;
   text-align: center;
+}
+.hidden{
+  opacity: 0;
 }

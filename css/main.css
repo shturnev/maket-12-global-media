@@ -26,6 +26,9 @@ body {
   margin: 0;
   text-align: center; }
 
+.hidden {
+  opacity: 0; }
+
 #welcome {
   background: url("../img/ggg.jpg") no-repeat center bottom/cover; }
   #welcome > .wr {
@@ -561,7 +564,7 @@ body {
     max-width: 945px;
     margin: 0 auto;
     background: white;
-    padding: 100px 0;
+    padding: 100px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
