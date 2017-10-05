@@ -5,6 +5,20 @@ $grayDark: #282828;
 $grayLight: #767676;
 $orange: #f3a032;
 
+$md: 768px;
+$xs: 550px;
+
+%ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@mixin media($size){
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
 html,body{
   margin: 0;
   padding: 0;
