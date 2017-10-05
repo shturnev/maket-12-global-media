@@ -6,4 +6,131 @@ html, body {
   min-height: 100%;
   font-family: 'Roboto', sans-serif; }
 
+.wr {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+#welcome {
+  background: url("../img/welcome-bg.jpg") no-repeat center bottom/cover; }
+  #welcome > .wr {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    align-content: space-between;
+    min-height: 815px; }
+    #welcome > .wr header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 50px; }
+      #welcome > .wr header .logo {
+        width: 228px;
+        display: block; }
+        #welcome > .wr header .logo img {
+          max-width: 100%; }
+      #welcome > .wr header > .col-2 .menu-btn svg {
+        width: 25px;
+        height: 25px;
+        fill: white;
+        cursor: pointer; }
+      #welcome > .wr header > .col-2 .menu-cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        #welcome > .wr header > .col-2 .menu-cont > .col-1 {
+          display: flex;
+          margin-right: 105px;
+          align-items: center;
+          transform: translateY(-2px); }
+          #welcome > .wr header > .col-2 .menu-cont > .col-1 a {
+            display: block;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-right: 25px; }
+            #welcome > .wr header > .col-2 .menu-cont > .col-1 a:last-of-type {
+              margin-right: 0; }
+            #welcome > .wr header > .col-2 .menu-cont > .col-1 a:hover, #welcome > .wr header > .col-2 .menu-cont > .col-1 a.active {
+              color: white; }
+        #welcome > .wr header > .col-2 .menu-cont > .col-2 {
+          display: grid;
+          grid-template-columns: auto auto;
+          align-items: center;
+          grid-gap: 34px; }
+          #welcome > .wr header > .col-2 .menu-cont > .col-2 .lang-cont {
+            position: relative; }
+            #welcome > .wr header > .col-2 .menu-cont > .col-2 .lang-cont .cur {
+              display: flex;
+              align-items: center;
+              color: #fff;
+              font-size: 14px;
+              font-weight: 500;
+              text-transform: uppercase;
+              cursor: pointer; }
+              #welcome > .wr header > .col-2 .menu-cont > .col-2 .lang-cont .cur svg {
+                width: 7px;
+                height: 7px;
+                fill: white;
+                margin-left: 5px; }
+            #welcome > .wr header > .col-2 .menu-cont > .col-2 .lang-cont .items {
+              display: none;
+              position: absolute;
+              padding: 10px;
+              background: white; }
+              #welcome > .wr header > .col-2 .menu-cont > .col-2 .lang-cont .items a {
+                display: block;
+                font-size: 14px;
+                color: #282828;
+                text-decoration: none;
+                margin-bottom: 5px; }
+                #welcome > .wr header > .col-2 .menu-cont > .col-2 .lang-cont .items a:last-of-type {
+                  margin-bottom: 0; }
+                #welcome > .wr header > .col-2 .menu-cont > .col-2 .lang-cont .items a:hover {
+                  color: #f3a032; }
+          #welcome > .wr header > .col-2 .menu-cont > .col-2 .sign {
+            display: inline-flex;
+            align-items: center;
+            height: 53px;
+            background-color: white;
+            color: #282828;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 36px;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 0 55px;
+            border-radius: 30px; }
+            #welcome > .wr header > .col-2 .menu-cont > .col-2 .sign:hover {
+              color: white;
+              background-image: linear-gradient(to right, #dd4026 0%, #f4a332 100%); }
+    #welcome > .wr .center-line {
+      max-width: 562px;
+      margin: 0 auto;
+      text-align: center; }
+      #welcome > .wr .center-line h1 {
+        color: #fff;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 60px;
+        margin: 0 0 25px; }
+      #welcome > .wr .center-line .forBtn a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 212px;
+        height: 53px;
+        background: linear-gradient(to right, #dd4026 0%, #f4a332 100%);
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 25px;
+        opacity: 0.9;
+        transition: all 0.3s ease; }
+        #welcome > .wr .center-line .forBtn a:hover {
+          opacity: 1; }
+
 /*# sourceMappingURL=main.css.map */
