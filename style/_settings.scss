@@ -5,6 +5,12 @@ $grayDark: #282828;
 $grayLight: #767676;
 $orange: #f3a032;
 
+%ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 html,body{
   margin: 0;
   padding: 0;
