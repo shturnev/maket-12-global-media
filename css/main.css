@@ -74,6 +74,7 @@ body {
             #welcome > .wr header > .col-2 .menu-cont {
               display: none;
               position: fixed;
+              z-index: 10;
               flex-direction: column;
               justify-content: center;
               left: 0;

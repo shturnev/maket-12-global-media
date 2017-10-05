@@ -60,6 +60,7 @@
           @include media($md){
             display: none;
             position: fixed;
+            z-index: 10;
             flex-direction: column;
             justify-content: center;
             left: 0;
