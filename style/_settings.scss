@@ -5,6 +5,15 @@ $grayDark: #282828;
 $grayLight: #767676;
 $orange: #f3a032;
 
+$md: 768px;
+$xs: 550px;
+
+@mixin media($size){
+  @media (max-width:$size) {
+    @content;
+  }
+}
+
 %ul{
   list-style: none;
   margin: 0;
@@ -18,9 +27,25 @@ html,body{
   min-height: 100%;
   font-family: 'Roboto', sans-serif;
 }
-
 .wr{
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+}
+h2{
+  color: $grayDark;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+.h-text{
+  color: $grayLight;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+.hidden{
+  opacity: 0;
 }
